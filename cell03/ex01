@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+try:
+    # พิมพ์ข้อความบอกให้ใส่ตัวเลข
+    print("Enter a number")
+    
+    # รับค่าและแปลงเป็นตัวเลข (integer)
+    num = int(input())
+
+    # ใช้ for loop วนรอบตั้งแต่ 0 ถึง 9 (range(10) คือ 0-9)
+    for i in range(10):
+        result = i * num
+        # นำตัวเลขมาแปลงเป็น String แล้วเชื่อมกันให้เหมือนในตัวอย่าง
+        print(str(i) + " x " + str(num) + " = " + str(result))
+
+except ValueError:
+    # เผื่อผู้ใช้พิมพ์ตัวหนังสือเข้ามา โปรแกรมจะได้ไม่ Error พังทิ้ง
+    pass
